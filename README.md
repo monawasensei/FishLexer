@@ -1,37 +1,6 @@
-# Sakana
+# to compile
 
-A syntax-tree based interpreter implementation for the Sakana programming language.
-
-A functional programming language, heavily inspired by Haskell and subliminally inspired by Scheme.
-Based on fish, using fishy words and fish braces >()> <()<
-
-# Try it
-
-To interpret a Sakana file, make sure you have Haskell's cabal installed
-and you can run an executable using:
-
-```cabal run Sakana path/to/your/Sakana/file.skn```
-
-Any file that contains Sakana code can be executed but for posterity,
-the file extensions, .skn, or .sakana are preferred.
-
-You can also peak at the file's tree structure using:
-
-```cabal run SakanaST path/```
-
-I apologize in advance for cabal not building properly. You can always use ghc to compile
-the executable files yourself.
-The executables are app/Main.hs and app/PTIO.hs
-
-# What is Sakana?
-
-Sakana is a functional programming language that is very (perhaps too) similar to Haskell and Scheme.
-All of the syntax is fishy and code blocks are executed and their value returned depending on what kind of fish they reside in.
-There are two types of fish, send fish ">()>", and return fish "<()<"
-
-Send fish provide information to the return fish they are immediately in front of.
-A return fish will execute its code and return a value. That's the most fundamental rule of fish,
-return fish always execute and return.
+open app/ and run ```ghc Main.hs```
 
 ## Keywords
 
